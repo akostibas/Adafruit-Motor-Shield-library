@@ -32,6 +32,19 @@
 #ifndef _AFMotor_h_
 #define _AFMotor_h_
 
+// This is shit alexi added
+#define __AVR__
+#define TCCR2A  _SFR_MEM8(0xB0)
+#define TCCR2B _SFR_MEM8(0xB1)
+#define COM2A1 7
+#define COM2B1 5
+#define OCR2B _SFR_MEM8(0xB4)
+#define CS20 0
+#define OCR2A _SFR_MEM8(0xB3)
+#define WGM20 0
+#define WGM21 1
+///////////////////////////
+
 #include <inttypes.h>
 #if defined(__AVR__)
     #include <avr/io.h>
